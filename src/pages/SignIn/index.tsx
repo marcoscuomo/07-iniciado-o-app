@@ -39,7 +39,7 @@ const SignIn: React.FC = () => {
   const passwordRef = useRef<TextInput>(null);
   const navigation = useNavigation();
 
-  const { signIn, user } = useAuth();
+  const { signIn } = useAuth();
   
   const handleSignIn = useCallback(async (data: SignInFormData) => {
         
@@ -75,7 +75,7 @@ const SignIn: React.FC = () => {
         
       }
     }
-  }, []);
+  }, [SignIn]);
 
 
   return (
